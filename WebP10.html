@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configuración</title>
+    <link rel="stylesheet" href="styleP10.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <button class="header-button" >
+                <img src="Resources/salida-icon.png" alt="Icono de Configuración" id="imageLink" style="cursor: pointer;">
+            </button>
+            <img src="Resources/Configuración título.png" alt="CONFIGURACIÓN" class="header-title">
+        </div>
+    </header>
+    <div class="container">
+        <form action="./index.html" method="post" class="form">
+            <div class="form-group">
+                <label for="nombreApellido" class="form-label"><img src="Resources/btn-np.png" alt="Nombre y apellido"></label>
+                <input type="text" id="nombreApellido" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="nombreApellido" class="form-label"><img src="Resources/btn-user.png" alt="Nombre y apellido"></label>
+                <input type="text" id="nombreApellido" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="nombreApellido" class="form-label"><img src="Resources/btn-pass.png" alt="Nombre y apellido"></label>
+                <input type="text" id="nombreApellido" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="nombreApellido" class="form-label"><img src="Resources/btn-passc.png" alt="Nombre y apellido"></label>
+                <input type="text" id="nombreApellido" class="form-input">
+            </div>
+            <!-- Repite para los otros campos del formulario -->
+            <button type="submit" class="form-button">
+                <img src="Resources/btn-listo.png" alt="Listo"  id="imageLink2" style="cursor: pointer;">
+            </button>
+        </form>
+    </div>
+    <script>
+               document.getElementById('imageLink').addEventListener('click', function() {
+    window.location.href = './index.html';
+});
+
+document.getElementById('imageLink2').addEventListener('click', function() {
+    window.location.href = './index.html';
+});
+
+         </script>
+</body>
+</html>

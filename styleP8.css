@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ff0000;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-button {
+    position: absolute; /* Posiciona el icono absolutamente */
+    left: 10px; /* Espaciado desde el borde izquierdo */
+    width: 50px; /* Tamaño del icono */
+}
+
+.header-logo {
+    margin: 0 auto; /* Centra el logo */
+    display: block;
+    height: 60px; /* Ajusta el tamaño según necesidad */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.kata-box {
+    width: 180px;
+    margin: 20px 70px;
+    position: relative;
+    
+   
+    border-radius: 5px;
+}
+
+.kata-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.title-image, .play-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title-image {
+    top: 10px;
+}
+
+.play-button {
+    bottom: -50px;
+}

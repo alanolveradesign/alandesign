@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.icon {
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    width: 30px; /* Ajusta el tamaño como lo necesites */
+    margin-right: 20px; /* Agrega espacio a la derecha de cada ícono */
+}
+
+.icon:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último ícono para evitar espacio extra */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    height: 50px; /* Ajusta según el tamaño real de tu logo */
+   
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-section  {
+  align-items: center;
+}
+
+article {
+    background-color: white;
+    margin-bottom: 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+article img {
+    width: 25%;
+    height: auto;
+}
+
+.left-section {
+    width: calc(70% - 40px);
+    text-align: center;
+}
+
+.right-section {
+    width: calc(70% - 40px);
+    text-align: center;
+}
+
+.right-section img {
+    width: 50%;
+    height: auto;
+}
+
+.event-info {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #202020;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    align-self: center;
+    margin: 20px 0;
+    border: none;
+    background-image: url('Resources/BtnUsuario.png'); /* Asegura que esta es la ruta correcta */
+    background-color: transparent; /* Establece el fondo a transparente */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(240, 0, 0);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: none; /* Elimina la transición para prevenir cualquier cambio de color de fondo */
+}
+
+
+.icon-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.icon-button img {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: 50px; /* Ajusta el tamaño según sea necesario */
+}
+
+.icon-button:hover img {
+    opacity: 0.8; /* Efecto al pasar el mouse */
+}

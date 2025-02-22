@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Karate Olvera</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="icons">
+                <img src="Resources/salida-icon.png" alt="Salir" class="icon" id="imageLink" style="cursor: pointer;">
+                <img src="Resources/configuracion-icon.png" alt="Configuraciones" class="icon" id="imageLink2" style="cursor: pointer;">
+            </div>
+            <img src="Resources/Logotipo2.png" alt="Logo Olvera" class="logo">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./WebP8.html">Katas</a></li>
+                <li><a href="./WebP6.html">Resistencia</a></li>
+                <li><a href="./WebP5.html">Flexibilidad</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="left-section">
+            <article>
+                <img src="Resources/KarateCurso.png" alt="KarateCursos" >
+            </article>
+            <article>
+                <img src="Resources/ExamenOvalo.png" alt="Examen Cinta Amarilla">
+                <h2>Examen: cinta amarilla</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button id="goP3"><img src="Resources/btn-Tomar.png" alt="tomar"></button>
+            </article>
+            <article>
+                <img src="Resources/ExamenOvalo.png" alt="Tekki Shodan">
+                <h2>Tekki Shodan</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button id="goP8"><img src="Resources/btn-Tomar.png" alt="tomar"></button>
+            </article>
+        </div>
+        <div class="right-section">
+            <img src="Resources/ip2.jpeg" alt="Evento Karate">
+            <div class="event-info">
+                <h2>Evento</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Karate Olvera. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('imageLink').addEventListener('click', function() {
+    window.location.href = './login.html';
+});
+
+document.getElementById('imageLink2').addEventListener('click', function() {
+    window.location.href = './WebP10.html';
+});
+
+document.getElementById('goP3').addEventListener('click', function() {
+    window.location.href = './WebP3.html';
+});
+
+document.getElementById('goP8').addEventListener('click', function() {
+    window.location.href = './WebP8.html';
+});
+    </script>
+
+
+</body>
+</html>

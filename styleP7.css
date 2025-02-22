@@ -1,0 +1,69 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra el contenido de header */
+    align-items: center;
+    position: relative; /* Necesario para posicionar absolutamente el icono izquierdo */
+    padding: 10px 0;
+}
+
+
+
+.left-icon {
+    position: absolute; /* Posiciona el icono absolutamente */
+    left: 10px; /* Espaciado desde el borde izquierdo */
+    width: 50px; /* Tamaño del icono */
+}
+
+
+.center-logo {
+    
+    height: 50px; /* Ajusta según tus necesidades */
+}
+
+.red-title {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main .video {
+    width: 50%; /* Ajusta el ancho del video según necesites */
+    margin: 20px 0;
+}
+
+main .button {
+    cursor: pointer;
+    width: 300px; /* Ajusta según tus necesidades */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.exit-icon {
+    width: 50px;
+    margin: 10px;
+}

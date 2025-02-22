@@ -1,0 +1,96 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D90429; /* Color de fondo rojo */
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 400px;
+    max-width: 90%; /* Asegura que el contenedor no sea demasiado ancho en pantallas pequeñas */
+    padding: 2vh; /* Usa un padding vertical basado en el porcentaje de la altura de la pantalla */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Mantiene todo el contenido dentro del contenedor */
+}
+.logo {
+    height: 50vh; /* Limita el tamaño del logo basado en la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegura que el logo se centre y llene el ancho */
+    margin-bottom: 2vh; /* Espaciado vertical basado en la altura de la pantalla */
+}
+
+.logo img {
+    height: 100%; /* El logo usa todo el alto asignado a su contenedor */
+    width: auto; /* Mantiene la relación de aspecto del logo */
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-image: url('Resources/InputFiled.png'); /* Asegúrate de cambiar esta ruta a la ubicación de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el input */
+    background-position: center; /* Centra la imagen dentro del input */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #ffffff; /* Color del texto, ajusta según necesidad para contraste */
+    font-size: 20px; /* Tamaño de la fuente */
+    /* Bordes redondeados como en tu diseño original */
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent; /* Hacer el fondo transparente para que la imagen sea visible */
+   /* Borde blanco si deseas mantenerlo */
+    padding: 0; /* Quitar padding aquí para no afectar el padding del input */
+}
+
+
+button {
+    width: 120%;
+    padding: 10px;
+    align-self: center;
+    margin: 20px 0;
+    border: none;
+    background-image: url('Resources/BtnUsuario.png'); /* Asegura que esta es la ruta correcta */
+    background-color: transparent; /* Establece el fondo a transparente */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(240, 0, 0);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: none; /* Elimina la transición para prevenir cualquier cambio de color de fondo */
+}
+
+button:hover {
+    background-color: transparent; /* Mantiene el fondo transparente incluso al pasar el mouse */
+}

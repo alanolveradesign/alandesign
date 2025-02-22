@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #ff0000;
+    position: relative; /* Asegúrate de que el header tenga posición relativa para centrar correctamente el logo */
+}
+.header-button {
+    height: 50px; /* Ajusta la altura de la imagen */
+    width: auto; /* Mantiene la relación de aspecto de la imagen */
+    display: block; /* Asegura que la imagen se muestre correctamente */
+}
+#back-button {
+    font-size: 50px; /* Tamaño razonable para visibilidad */
+    border: none;
+    background: none;
+  
+    cursor: pointer; /* Añade cursor pointer para indicar interactividad */
+}
+
+#logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px; /* Asegura que el logo se vea bien */
+}
+
+.carousel {
+    width: 800px; /* o 100% si quieres que ocupe todo el ancho disponible */
+    margin: 20px auto;
+    position: relative;
+}
+
+.carousel .slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel .slide.active {
+    display: block;
+}
+
+.info {
+    text-align: center; /* Centra el texto horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente si es necesario */
+    align-items: center; /* Asegura que todo esté centrado horizontalmente en flexbox */
+    height: 100px; /* Ajusta la altura según necesites */
+}
+
+.indicators {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: #ff8e8e;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: #ff0000;
+}
+
+.prev, .next {
+    font-size: 24px;
+    color: #ffffff;
+    background-color: rgb(255, 0, 0);
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centra los botones verticalmente */
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,1);
+}

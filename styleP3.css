@@ -1,0 +1,102 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; /* Hace que el contenedor use el espacio disponible, excepto el footer */
+    display: flex;
+    flex-direction: column;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: red; /* Fondo rojo */
+    border: 3px solid rgb(255, 255, 255); /* Borde negro alrededor del top-row */
+    box-sizing: border-box; /* Asegura que el borde y padding se incluyan en el ancho definido */
+}
+.course {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: 20px; /* Espacio dentro de cada curso */
+    color: white; /* Texto blanco para legibilidad */
+    border-right: 2px solid white; /* Añade una línea divisoria blanca a la derecha de cada curso */
+}
+.course:last-child {
+    border-right: none; /* Elimina el borde del último curso para no tener un borde extra al final */
+}
+.course h2, .course p, .course button {
+    margin: 5px 0;
+}
+
+.course button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.middle {
+    flex-grow: 1; /* Permite que este contenedor crezca para llenar el espacio disponible */
+    display: flex;
+    align-items: center; /* Centra verticalmente el icono */
+    justify-content: left; /* Centra horizontalmente el icono */
+    padding: 50px;
+}
+
+.icon {
+    height: 50px; /* Ajusta según el tamaño real de tu icono */
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+}
+
+.bottom-row {
+    display: flex;
+    width: 100%;
+}
+
+.image {
+    flex: 1;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: red;
+}
+button {
+    width: 100%; /* Asegura que el botón se estire para llenar su contenedor */
+    
+    align-self: center; /* Centra el botón dentro de su contenedor flex */
+   
+    border: none; /* Elimina cualquier borde predeterminado */
+    background-color: transparent; /* Hace que el color de fondo sea transparente */
+    
+    background-position: center; /* Centra la imagen dentro del botón */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: rgb(240, 0, 0); /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    transition: none; /* Desactiva las transiciones para prevenir efectos visuales indeseados */
+}
+
+

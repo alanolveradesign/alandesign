@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleP9.css">
+</head>
+<body>
+    <header>
+        <button id="back-button">
+            <img src="Resources/salida-icon.png" alt="Botón" class="header-button" id="imageLink" style="cursor: pointer;">
+        </button>
+        <img src="Resources/Logotipo2.png" alt="OLVERA" id="logo">
+    </header>
+    <div class="carousel">
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <div class="slide active">
+            <img src="Resources/ip94.png" alt="Examen: Enero">
+            <div class="info">
+                <h3>Examen: Febrero</h3>
+                <p>Descripción del evento de Febrero.</p>
+            </div>
+        </div>
+        <div class="slide active">
+            <img src="Resources/ip92.png" alt="Examen: Febrero">
+            <div class="info">
+                <h3>Examen: Febrero</h3>
+                <p>Descripción del evento de Febrero.</p>
+            </div>
+        </div>
+        <div class="slide active">
+            <img src="Resources/ip93.png" alt="Examen: Marzo">
+            <div class="info">
+                <h3>Examen: Febrero</h3>
+                <p>Descripción del evento de Febrero.</p>
+            </div>
+        </div>
+        <!-- Más slides aquí -->
+    </div>
+    <div class="indicators">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script>
+
+document.getElementById('imageLink').addEventListener('click', function() {
+    window.location.href = './WebP7.html';
+});
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+    
+</body>
+</html>

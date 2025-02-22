@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cursos de Artes Marciales</title>
+    <link rel="stylesheet" href="styleP3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-row">
+            <div class="course">
+                <h2>CURSO: CINTA AMARILLA</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam non.</p>
+                <button id="goP4"><img src="Resources/btn-TomarBlanco.png" alt="tomar"></button>
+            </div>
+            <div class="course">
+                <h2>CURSO: RESISTENCIA</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam non.</p>
+                <button id="goP6"><img src="Resources/btn-TomarBlanco.png" alt="tomar"></button>
+            </div>
+            <div class="course">
+                <h2>CURSO: FLEXIBILIDAD</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam non.</p>
+                <button id="goP5"><img src="Resources/btn-TomarBlanco.png" alt="tomar"></button>
+            </div>
+        </div>
+        <div class="middle">
+            <img class="icon" src="Resources/salidaR-icon.png" alt="Icono" id="imageLink" style="cursor: pointer;">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="bottom-row">
+            <div class="image" style="background-image: url('Resources/ip31.jpeg');"></div>
+            <div class="image" style="background-image: url('Resources/ip32.jpeg');"></div>
+            <div class="image" style="background-image: url('Resources/ip33.jpeg');"></div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('goP4').addEventListener('click', function() {
+    window.location.href = './WebP4.html';
+});
+
+document.getElementById('goP6').addEventListener('click', function() {
+    window.location.href = './WebP6.html';
+});
+
+document.getElementById('goP5').addEventListener('click', function() {
+    window.location.href = './WebP5.html';
+});
+
+document.getElementById('imageLink').addEventListener('click', function() {
+    window.location.href = './index.html';
+});
+
+    </script>
+</body>
+</html>

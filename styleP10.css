@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: #f00; /* Rojo */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Utiliza todo el ancho disponible */
+}
+
+.header-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header-button img {
+    width: 30px; /* Ajusta el tamaño del icono del botón según necesites */
+}
+
+.header-title {
+    height: 50px; /* Ajusta el tamaño de la imagen del título según necesites */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 70px);
+    padding: 50px;
+}
+.form {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+  
+  
+}
+
+.form-group {
+    margin-bottom: 50px;
+}
+
+.form-group img {
+    width: 50%; /* Ajusta este tamaño según el de tus imágenes de etiquetas */
+    margin-bottom: 5px;
+}
+
+
+
+.form-button img {
+    width: 75%; /* Ajusta este tamaño para el botón 'Listo' */
+   
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    align-self: center;
+    margin: 20px 0;
+    border: none;
+    background-image: url('Resources/BtnUsuario.png'); /* Asegura que esta es la ruta correcta */
+    background-color: transparent; /* Establece el fondo a transparente */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(240, 0, 0);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: none;
+}
+
+input[type="text"] {
+    width: 50%;
+    border: none;
+    padding: 8px 10px; /* Añade un padding adecuado para el texto no sobrescriba la imagen */
+    background-image: url('Resources/InputFiled.png'); /* Añade la URL de tu imagen de fondo */
+   
+}
+
+input:hover{
+    background-color: transparent;
+}
